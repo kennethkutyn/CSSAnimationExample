@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 81%;
+  margin: 0 auto; }
+
+@keyframes slideRightDown {
+  0% {
+    margin-left: 0px;
+    background-color: #0050d1; }
+  25% {
+    transform: scale(1.2);
+    background-color: #0050d1; }
+  50% {
+    margin-left: 125px;
+    transform: scale(1);
+    background-color: #0050d1; }
+  75% {
+    transform: scale(0.8);
+    background-color: #0042ad; }
+  100% {
+    margin-left: 0px;
+    background-color: #0050d1; } }
+
+.circle {
+  margin-top: 50px;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  z-index: 0;
+  position: absolute;
+  animation-name: slideRightDown;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.24, 0, 0.76, 1);
+  animation-delay: 0;
+  animation-iteration-count: 99;
+  animation-direction: none;
+  animation-play-state: running; }
+
+@keyframes orbit2 {
+  0% {
+    margin-left: 125px;
+    background-color: #af0005;
+    z-index: -1; }
+  25% {
+    transform: scale(0.8);
+    z-index: -1;
+    background-color: #9b0105; }
+  50% {
+    margin-left: 0;
+    transform: scale(1);
+    background-color: #af0005; }
+  75% {
+    transform: scale(1.2);
+    background-color: #bc0006;
+    z-index: 1; }
+  100% {
+    margin-left: 125px;
+    z-index: -1;
+    background-color: #af0005; } }
+
+.circle2 {
+  margin-top: 50px;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: orbit2;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.24, 0, 0.76, 1);
+  animation-delay: 0;
+  animation-iteration-count: 99;
+  animation-direction: none;
+  animation-play-state: running; }
